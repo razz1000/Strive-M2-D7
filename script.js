@@ -78,11 +78,56 @@ trimBlogposts();
 /* EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title) */
 
 
+let addNewBlogPost = () => {
+    let newerButton = document.querySelector("a.btn.disabled");
+    let blogSection = document.querySelector(".col-md-8.blog-main")
+    let newBlogpost4 = document.createElement("div")
+    newBlogpost4.innerText = "Hello"
+    blogSection.appendChild(newBlogpost4);
+}
+
+
+let newerButtonEventListener = () => {
+    let newerButton = document.querySelector("a.btn.disabled");
+    newerButton.addEventListener("click", addNewBlogPost())
+    console.log()
+}
+
+/* 
+window.onload(
+    newerButtonEventListener()
+
+)
+ */
+
+
+
+// Something wrong here - ask at DEBRIEF!
+
+
+
+/*  EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post */
+
+
+
+
+/* EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name */
+
+/* 
+let authorEventListener = () => {
+    document.querySelector("h1").addEventListener("click", h1Alert())
+}
+ */
+
+let h1Alert = () => {
+    alert("hello")
+}
+
+
+document.querySelector("h1").addEventListener("onmouseenter", h1Alert());
 
 
 
 /*
     JS Exercises
-    EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
-    EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
 */
