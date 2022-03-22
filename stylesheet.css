@@ -1,0 +1,63 @@
+/* EX1) Write a selector to target the h1 in jumbotron */
+
+.jumbotron.bg-dark {
+    background-color: red !important;
+}
+
+/* EX2) Write a selector to target every children of the navbar */
+
+.nav-scroller > nav > .p-2.text-muted {
+    background-color: red;
+}
+
+/* EX3) Write a selector to target the "continue reading..." inside the jumbotron */
+
+.jumbotron.bg-dark > .col-md-6 > .lead > .text-white {
+    background-color: blue;
+}
+
+/* 
+EX4) Write a selector to target the first blogpost */
+
+.blog-post:first-of-type {
+    background-color: green;
+}
+
+/* 
+EX5) Write a selector to target the "even" links in the navbar */
+
+.nav-scroller > nav > a:nth-child(even) {
+    background-color: green !important;
+}
+
+/* 
+EX6) Write a selector to target the last blog post
+*/
+
+.blog-post:last-of-type {
+    background-color: aqua;
+}
+
+/* EX7) Write a selector to target all the li into the first ordered-list in the sidebar ( Archives ) */
+
+aside > .p-4:nth-child(2) > .list-unstyled:first-of-type > li {
+    background-color: red !important; 
+}
+/* EX8) Write a selector to target the second post author */
+
+.blog-post:nth-of-type(2) > .blog-post-meta > a {
+    background-color: aqua;
+}
+
+/* EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly */
+
+footer > p > a[href|="#"]:last-of-type {
+    background-color: green;
+}
+
+/* EX10) Write a selector to target the footer */
+
+footer {
+    background-color: black;
+}
+
