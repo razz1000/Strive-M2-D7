@@ -97,17 +97,23 @@ let newerButtonEventListener = () => {
 
 window.onload = function(){
     newerButtonEventListener()
+    h1AlertEventListener()
+    removeOldBlogpostEventListener()
 }
 
 
 
-
-
-// Something wrong here - ask at DEBRIEF!
-
-
-
 /*  EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post */
+
+let removeOldBlogpost = () => {
+    let lastBlogpost = document.querySelector(".col-md-8.blog-main > div:last-of-type")
+    lastBlogpost.remove();
+}
+
+let removeOldBlogpostEventListener = () => {
+    let olderButton = document.querySelector(".btn.btn-outline-primary");
+    olderButton.addEventListener("click", removeOldBlogpost)
+}
 
 
 
@@ -124,9 +130,10 @@ let h1Alert = () => {
     alert("hello")
 }
 
-/* 
-document.querySelector("h1").addEventListener("onmouseenter", h1Alert());
- */
+let h1AlertEventListener = () => { 
+document.querySelector("h1").addEventListener("click", h1Alert);
+}
+
 
 
 /*

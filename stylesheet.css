@@ -62,3 +62,6 @@ footer {
 }
 
 
+.btn.btn-outline-primary {
+    background-color: red;
+}
