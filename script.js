@@ -21,13 +21,13 @@ changeColorOfH1("yellow");
 
 
 /* EX13) Write a function to change the background of the jumbotron */
-/* 
+
 let changeColorOfJumbotron = () => {
-    let jumbotron1 = document.querySelector(".jumbotron .bg-dark")
-    jumbotron1.style.backgroundColor = yellow;
+    let jumbotron1 = document.querySelector(".jumbotron") 
+    jumbotron1.style.setProperty("background-color", "black", "important") 
 }
-changeColorOfJumbotron() // This one is not entirely working. !
- */
+changeColorOfJumbotron() 
+
 
 /* EX14) Write a function to remove all the links under "Elsewhere" */
 
@@ -89,16 +89,17 @@ let addNewBlogPost = () => {
 
 let newerButtonEventListener = () => {
     let newerButton = document.querySelector("a.btn.disabled");
-    newerButton.addEventListener("click", addNewBlogPost())
-    console.log()
+    newerButton.addEventListener("click", addNewBlogPost)
+    newerButton.classList.remove("disabled")
+
 }
 
-/* 
-window.onload(
-    newerButtonEventListener()
 
-)
- */
+window.onload = function(){
+    newerButtonEventListener()
+}
+
+
 
 
 
@@ -123,13 +124,13 @@ let h1Alert = () => {
     alert("hello")
 }
 
-
+/* 
 document.querySelector("h1").addEventListener("onmouseenter", h1Alert());
-
+ */
 
 
 /*
     JS Exercises
 
-    
+
 */
