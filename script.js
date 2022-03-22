@@ -130,4 +130,6 @@ document.querySelector("h1").addEventListener("onmouseenter", h1Alert());
 
 /*
     JS Exercises
+
+    
 */
